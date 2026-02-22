@@ -1,0 +1,20 @@
+{
+  "meting_api_base": {
+    "description": "MetingAPI Base URL",
+    "type": "string",
+    "hint": "例如：http://114.66.46.136:3000 （不带末尾 / ）",
+    "default": "http://114.66.46.136:3000"
+  },
+  "bridge_key": {
+    "description": "JSON 哨兵字段值",
+    "type": "string",
+    "hint": "用于识别 Skill 输出 JSON",
+    "default": "napcat.music.v1"
+  },
+  "silent_swallow": {
+    "description": "吞掉 JSON 原文",
+    "type": "bool",
+    "hint": "开启后会尽量避免把 JSON 文本发出去（用零宽字符占位）",
+    "default": true
+  }
+}
